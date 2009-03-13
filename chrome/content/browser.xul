@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://example/skin/skin.css" type="text/css"?> 
+<!DOCTYPE example SYSTEM "chrome://example/locale/translations.dtd">
+<overlay id="sample" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+		<script src="example.js" />
+		
+		<menupopup id="menu_ToolsPopup"> 
+			<menuitem label="&runexample;" key="link-target-finder-run-key" oncommand="example.run()"/> 
+		</menupopup>
+		
+		<keyset>
+			<key id="link-target-finder-run-key" modifiers="accel alt shift" key="L" oncommand="example.run()"/>
+		</keyset>
+		
+		<statusbar id="status-bar">
+			<statusbarpanel id="link-target-finder-status-bar-icon" class="statusbarpanel-iconic" src="chrome://example/skin/status-bar.png" tooltiptext="&runexample;" onclick="example.run()" />
+		</statusbar>
+		
+		<toolbarpalette id="BrowserToolbarPalette">
+			<toolbarbutton id="link-target-finder-toolbar-button" label="Link Target Finder" tooltiptext="&runexample;" oncommand="example.run()"/>
+		</toolbarpalette>
+</overlay>
