@@ -1,12 +1,11 @@
-#link-target-finder-toolbar-button {
-	list-style-image: url("chrome://example/skin/toolbar-large.png");
+#example-toolbar-button {
+	list-style-image: url(chrome://example/skin/toolbar-large.png);
 }
 
-#link-target-finder-status-bar-icon {
-	width: 83px;
-	margin: 0 5px;
+toolbar[iconsize=small] #example-toolbar-button {
+	list-style-image: url(chrome://example/skin/toolbar-small.png);
 }
 
-.link-target-finder-selected {
-	outline: 2px solid red !important;
+#example-status-bar-icon {
+	list-style-image: url(chrome://example/skin/status-bar.png);
 }

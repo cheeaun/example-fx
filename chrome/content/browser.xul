@@ -5,18 +5,18 @@
 		<script src="example.js" />
 		
 		<menupopup id="menu_ToolsPopup"> 
-			<menuitem label="&runexample;" key="link-target-finder-run-key" oncommand="example.run()"/> 
+			<menuitem label="&runexample;" key="example-run-key" oncommand="example.run()"/> 
 		</menupopup>
 		
 		<keyset>
-			<key id="link-target-finder-run-key" modifiers="accel alt shift" key="L" oncommand="example.run()"/>
+			<key id="example-run-key" modifiers="accel alt shift" key="E" oncommand="example.run()"/>
 		</keyset>
 		
 		<statusbar id="status-bar">
-			<statusbarpanel id="link-target-finder-status-bar-icon" class="statusbarpanel-iconic" src="chrome://example/skin/status-bar.png" tooltiptext="&runexample;" onclick="example.run()" />
+			<statusbarpanel id="example-status-bar-icon" class="statusbarpanel-iconic" tooltiptext="&runexample;" onclick="example.run()" />
 		</statusbar>
 		
 		<toolbarpalette id="BrowserToolbarPalette">
-			<toolbarbutton id="link-target-finder-toolbar-button" label="Link Target Finder" tooltiptext="&runexample;" oncommand="example.run()"/>
+			<toolbarbutton id="example-toolbar-button" class="toolbarbutton-1 chromeclass-toolbar-additional" label="Example" tooltiptext="&runexample;" oncommand="example.run()"/>
 		</toolbarpalette>
 </overlay>

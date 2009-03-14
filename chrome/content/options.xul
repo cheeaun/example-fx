@@ -2,12 +2,12 @@
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
  
 <prefwindow 
-     title="Link Target Finder Preferences"
+     title="Example Preferences"
      xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
  
-	<prefpane label="Link Target Finder Preferences">
+	<prefpane label="Example Preferences">
 		<preferences>
-			<preference id="link-target-finder-autorun" name="extensions.example.autorun" type="bool"/>
+			<preference id="example-autorun" name="extensions.example.autorun" type="bool"/>
 		</preferences>
 		
 		<groupbox>
@@ -19,8 +19,7 @@
 				</columns>
 				<rows>
 					<row>
-						<label control="autorun" value="Autorun"/>
-						<checkbox id="autorun" preference="link-target-finder-autorun"/>
+						<checkbox id="autorun" preference="example-autorun" label="Autorun"/>
 					</row>
 				</rows>
 			</grid>
